@@ -7,7 +7,7 @@ const { addTrip,
     getVehicleFinancialSummary,
     getOwnerTripCounts,
     getVehicleTripCounts } = require("../controllers/tripController");
-const verifyToken = require("../middleware/verifyToken");
+const verifyToken = require("../Middleware/verifyToken");
 
 const router = express.Router();
 
