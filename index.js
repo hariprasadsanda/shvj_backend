@@ -24,7 +24,10 @@ app.use(express.json());  // Middleware for parsing JSON bodies
 // Routes setup
 app.use('/owner', ownerRoutes);
 app.use('/vehicle', vehicleRoutes);  // Fixed typo 'vechile' to 'vehicle'
-app.use('/trip',tripRoutes) // A
+app.use('/trip',tripRoutes) 
+app.use('/', (req, res) => {
+  res.send('Welcome to the Truck Management API');
+});
 
 // Start server
 app.listen(PORT, () => {
