@@ -8,7 +8,7 @@ const tripRoutes = require('./routes/tripRoutes');
 
 dotenv.config();
 
-const PORT = process.env.PORT || 9000;  // Corrected port assignment
+const PORT = process.env.PORT || 9001;  // Corrected port assignment
 
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI)
